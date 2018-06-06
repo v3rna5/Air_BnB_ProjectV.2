@@ -8,7 +8,7 @@
     To Do List {{month}}/{{day}}/{{year}}
   </h1>
 </div>
-<h3>{{currentFocus}}</h3>
+<h3>{{currentTask}}</h3>
 <ul>
   <li [class]="priorityColor(currentTask)" *ngFor="let currentTask of tasks">{{currentTask.description}} <button (click)="editTask(currentTask)">Edit!</button></li>
 </ul>
@@ -35,5 +35,5 @@
    <input type="radio" [(ngModel)]="selectedTask.priority" [value]="1">1 (Low Priority)<br>
    <input type="radio" [(ngModel)]="selectedTask.priority" [value]="2">2 (Medium Priority)<br>
    <input type="radio" [(ngModel)]="selectedTask.priority" [value]="3">3 (High Priority)
-   <button (click)="finishedEditing()">Done</button>
+<button class="btn btn-primary"(click)="finishedEditing()">Done</button>
  </div>
