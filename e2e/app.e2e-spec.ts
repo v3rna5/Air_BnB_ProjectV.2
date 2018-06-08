@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('angular-to-do App', () => {
+describe('vjs-Airbnb App', () => {
   let page: AppPage;
 
   beforeEach(() => {
