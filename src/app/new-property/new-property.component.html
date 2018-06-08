@@ -3,7 +3,9 @@
 <div>
  <label>Enter New Property:</label>
  <input #newDescription>
+  <label>Enter Address:</label>
  <input #newAddress>
+  <label>Enter Amenities:</label>
  <input #newAmenities>
 </div>
 <div>
@@ -13,7 +15,7 @@
     <option [value]="2"> Medium Priority </option>
     <option [value]="3"> High Priority </option>
   </select>
-  <button (click)="submitForm(newDescription.value, newAddress.value, newAmenities.value, newPriority.value); newDescription.value=''; newAddress.value=''; newAmenities.value='';">Add</button>
+  <button (click)="submitForm(newDescription.value, newAddress.value, newAmenities.value, newPriority.value); newDescription.value=''; newAddress.value='';">Add</button>
 </div>
 <br>
 <br>
