@@ -1,13 +1,13 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<!DOCTYPE html>
+
 <html>
 <head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
   <!-- <div class="container"> -->
 
     <header>
-      <h1>B&B</h1>
+      <h1>vjs Airbnb</h1>
     </header>
     <nav>
       <p>
@@ -19,7 +19,7 @@
       </form>
       <div style="text-align:center">
 
-      </div>
+
       <h3>{{currentTask}}</h3>
       <div ng-app="myShoppingList" ng-cloak ng-controller="myCtrl" class="w3-card-2 w3-margin" style="max-width:400px;">
         <header class="w3-container w3-light-grey w3-padding-16">
@@ -29,16 +29,12 @@
       <app-task-list [childTaskList]="masterTaskList" (clickSender)="editTask($event)"></app-task-list>
       <app-edit-task [childSelectedTask]="selectedTask" (clickedDone)="finishedEditing()"></app-edit-task>
 
-    
-    <div class="w3-container w3-light-grey w3-padding-16">
-      <div class="w3-row w3-margin-top">
-        <div class="w3-col s10">
-          <div class="w3-col s2">
+
             <app-new-task (sendTask)="addTask($event)"></app-new-task>
-          </div>
-        </div>
-      </div>
+
     </div>
+
+
 </div>
     </nav>
     <article>
