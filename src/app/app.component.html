@@ -8,7 +8,9 @@
     To Do List {{month}}/{{day}}/{{year}}
   </h1>
 </div>
+
 <h3>{{currentTask}}</h3>
+
 <app-task-list [childTaskList]="masterTaskList" (clickSender)="editTask($event)"></app-task-list>
 <app-edit-task [childSelectedTask]="selectedTask" (clickedDone)="finishedEditing()"></app-edit-task>
 <app-new-task (sendTask)="addTask($event)"></app-new-task>
@@ -25,5 +27,7 @@
    <input type="radio" [(ngModel)]="selectedTask.priority" [value]="1">1 (Low Priority)<br>
    <input type="radio" [(ngModel)]="selectedTask.priority" [value]="2">2 (Medium Priority)<br>
    <input type="radio" [(ngModel)]="selectedTask.priority" [value]="3">3 (High Priority)
+   <br>
+   <br>
    <button class="btn btn-primary"(click)="finishedEditing()">Done</button>
  </div>
