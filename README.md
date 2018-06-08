@@ -1,4 +1,4 @@
-# Air B & B 
+# vjs Airbnb
 
 #### Epicodus JavaScript Independent Project, 06.08.2018
 
@@ -6,7 +6,7 @@
 
 [Github repository](https://github.com/v3rna5/Air_BnB_Project)
 
-This is my Angular JS Independent Project for Epicodus. It's a air b n b application. Users can add, edit their properties through their app, including details such amenities and address. 
+This is my Angular JS Independent Project for Epicodus. It's a air b n b application. Users can add, edit their properties through their app, including details such amenities and address.
 
 
 ## Setup/Installation Requirements
