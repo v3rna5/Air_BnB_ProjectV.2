@@ -1,27 +1,48 @@
-# AngularToDo
+# Air B & B 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+#### Epicodus JavaScript Independent Project, 06.08.2018
 
-## Development server
+#### By **Verna Santos**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[Github repository](https://github.com/v3rna5/Air_BnB_Project)
 
-## Code scaffolding
+This is my Angular JS Independent Project for Epicodus. It's a air b n b application. Users can add, edit their properties through their app, including details such amenities and address. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Setup/Installation Requirements
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+To run app locally: In terminal, navigate to your desktop and execute:
+  * `$ git clone https://github.com/mrtsanchez/Github-User-Lookup`
+  * `$ npm install`
+  * `$ bower install`
+  * `$ gulp build`
+  * `$ gulp serve`
 
-## Running unit tests
+## Known Bugs
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+There are no known bugs.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Technologies Used
 
-## Further help
+HTML, Javascript, Angular JS, Typescript, CSS.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## User Stories:
+
+* I want to add a property by submitting a form with property name, address price and amenities.
+* I want to view a list of my properties I have added.
+* I want to click a property to edit its name and details such as amenities or price
+
+## Specs
+
+| Behaviour  | Input | Output |
+| ------------- |:-------------:| -----|
+| The user should be able to add a property with name, price and details.     | Viceroy Condo, 135 Main St Manila Philippines, $35 a night | The app adds the property in the list. |
+| The user should be able to edit the name, price and details     | price: $35 >>> price update: $45 | update the value for price from 35 to 45. |
+| The user should be able to view only one property.    | select "view only Viceroy" | Display only Viceroy Property |
+
+### License
+
+Published under MIT License.
+
+Copyright (c) 2018 **_Verna Santos_**

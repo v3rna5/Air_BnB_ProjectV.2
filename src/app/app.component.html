@@ -2,109 +2,55 @@
 
 <!DOCTYPE html>
 <html>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <head>
-<style>
-div.container {
-    width: 100%;
-    border: 1px solid silver;
-}
-body{
-        background-image: url("http://www.hotelroomsearch.net/im/hotels/asia/sg/link-hotel-singapore-10.jpg")
 
-    }
-
-header, footer {
-    padding: 1em;
-    color: white;
-    background-color: lightgrey;
-    clear: left;
-    text-align: center;
-
-}
-nav {
-    float: left;
-    max-width: 600px;
-    margin: 0;
-    padding: 1em;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul a {
-    text-decoration: none;
-}
-
-article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden;
-}
-</style>
 </head>
- <body>
-<div class="container">
+<body>
+<div class="container"> 
 
-   <header>
+    <header>
       <h1>B&B</h1>
-   </header>
- <nav>
-<h1>Welcome, {{userName}}!</h1>
-<form>
-  <input [(ngModel)]="userName" type="text" name="user">
-</form>
-<div style="text-align:center">
-  <h1>
-    To Do List {{month}}/{{day}}/{{year}}
-  </h1>
-</div>
+    </header>
+    <nav>
+      <h1>Welcome, {{userName}}!</h1>
+      <form>
+        <input [(ngModel)]="userName" type="text" name="user">
+      </form>
+      <div style="text-align:center">
+        <h1>
+          To Do List {{month}}/{{day}}/{{year}}
+        </h1>
+      </div>
 
-<h3>{{currentTask}}</h3>
+      <h3>{{currentTask}}</h3>
 
-<app-task-list [childTaskList]="masterTaskList" (clickSender)="editTask($event)"></app-task-list>
-<app-edit-task [childSelectedTask]="selectedTask" (clickedDone)="finishedEditing()"></app-edit-task>
-<app-new-task (sendTask)="addTask($event)"></app-new-task>
-<!-- <app-edit-task [selectedTask]="selectedTask"></app-edit-task> -->
+      <app-task-list [childTaskList]="masterTaskList" (clickSender)="editTask($event)"></app-task-list>
+      <app-edit-task [childSelectedTask]="selectedTask" (clickedDone)="finishedEditing()"></app-edit-task>
+      <app-new-task (sendTask)="addTask($event)"></app-new-task>
+      <!-- <app-edit-task [selectedTask]="selectedTask"></app-edit-task> -->
 
- <div *ngIf="selectedTask">
-   <h3>{{selectedTask.description}}</h3>
-   <p>Task Complete? {{selectedTask.done}}</p>
-   <h3>Edit Task</h3>
-   <label>Enter Task Description:</label>
-   <input [(ngModel)]="selectedTask.description">
-   <label>Enter Task Priority (1-3):</label>
-   <br>
-   <input type="radio" [(ngModel)]="selectedTask.priority" [value]="1">1 (Low Priority)<br>
-   <input type="radio" [(ngModel)]="selectedTask.priority" [value]="2">2 (Medium Priority)<br>
-   <input type="radio" [(ngModel)]="selectedTask.priority" [value]="3">3 (High Priority)
-   <br>
-   <br>
-   <button class="btn btn-primary"(click)="finishedEditing()">Done</button>
- </div>
+    </nav>
+    <article>
+      <div *ngIf="selectedTask">
+        <h3>{{selectedTask.description}}</h3>
+        <p>Task Complete? {{selectedTask.done}}</p>
+        <h3>Edit Task</h3>
+        <label>Enter Task Description:</label>
+        <input [(ngModel)]="selectedTask.description">
+        <label>Enter Task Priority (1-3):</label>
+        <br>
+        <input type="radio" [(ngModel)]="selectedTask.priority" [value]="1">1 (Low Priority)<br>
+        <input type="radio" [(ngModel)]="selectedTask.priority" [value]="2">2 (Medium Priority)<br>
+        <input type="radio" [(ngModel)]="selectedTask.priority" [value]="3">3 (High Priority)
+        <br>
+        <br>
+        <button class="btn btn-primary"(click)="finishedEditing()">Done</button>
+      </div>
 
-
-
-
-
-
-
-
-
-
- </nav>
-
- <article>
-   Property Info
- </article>
-
- <footer>Copyright &copy; Verna Santos</footer>
-
- </div>
-
- </body>
+    </article>
+    <footer>Copyright &copy; Verna Santos</footer>
+  </div>
+</body>
  </html>
