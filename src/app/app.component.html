@@ -1,41 +1,51 @@
 <!--The content below is only a placeholder and can be replaced.-->
-
 <!DOCTYPE html>
 <html>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <head>
-
 </head>
 <body>
-<div class="container"> 
+  <!-- <div class="container"> -->
 
     <header>
       <h1>B&B</h1>
     </header>
     <nav>
-      <h1>Welcome, {{userName}}!</h1>
+      <p>
+        Date: {{month}}/{{day}}/{{year}}
+      </p>
+      <h3>Welcome, {{userName}}!</h3>
       <form>
         <input [(ngModel)]="userName" type="text" name="user">
       </form>
       <div style="text-align:center">
-        <h1>
-          To Do List {{month}}/{{day}}/{{year}}
-        </h1>
-      </div>
 
+      </div>
       <h3>{{currentTask}}</h3>
+      <div ng-app="myShoppingList" ng-cloak ng-controller="myCtrl" class="w3-card-2 w3-margin" style="max-width:400px;">
+        <header class="w3-container w3-light-grey w3-padding-16">
+          <h5>Manage Properties</h5>
+            </header>
 
       <app-task-list [childTaskList]="masterTaskList" (clickSender)="editTask($event)"></app-task-list>
       <app-edit-task [childSelectedTask]="selectedTask" (clickedDone)="finishedEditing()"></app-edit-task>
-      <app-new-task (sendTask)="addTask($event)"></app-new-task>
-      <!-- <app-edit-task [selectedTask]="selectedTask"></app-edit-task> -->
 
+    
+    <div class="w3-container w3-light-grey w3-padding-16">
+      <div class="w3-row w3-margin-top">
+        <div class="w3-col s10">
+          <div class="w3-col s2">
+            <app-new-task (sendTask)="addTask($event)"></app-new-task>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
     </nav>
     <article>
+        <!-- <app-new-task (sendTask)="addTask($event)"></app-new-task> -->
       <div *ngIf="selectedTask">
         <h3>{{selectedTask.description}}</h3>
-        <p>Task Complete? {{selectedTask.done}}</p>
+        <!-- <p>Task Complete? {{selectedTask.done}}</p> -->
         <h3>Edit Task</h3>
         <label>Enter Task Description:</label>
         <input [(ngModel)]="selectedTask.description">
@@ -48,9 +58,8 @@
         <br>
         <button class="btn btn-primary"(click)="finishedEditing()">Done</button>
       </div>
-
     </article>
     <footer>Copyright &copy; Verna Santos</footer>
-  </div>
+  <!-- </div> -->
 </body>
- </html>
+</html>
