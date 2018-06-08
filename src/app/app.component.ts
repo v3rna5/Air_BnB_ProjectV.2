@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Task } from './models/task.model';
+import { Property } from './models/property.model';
 
 @Component({
   selector: 'app-root',
@@ -12,23 +12,23 @@ export class AppComponent {
   month: number = this.currentTime.getMonth() + 1;
   day: number = this.currentTime.getDate();
   year: number = this.currentTime.getFullYear();
-  selectedTask = null;
+  selectedProperty = null;
 
-  masterTaskList: Task[] = [
-    new Task('Viceroy Property', 3),
-    new Task('Symphony Tower2 - 6th Floor', 2),
-    new Task('Symphony Tower2 - 14th Floor', 2),
-    new Task('Olympic Heights', 2)
+  masterPropertyList: Property[] = [
+    new Property('Viceroy Property', 3),
+    new Property('Symphony Tower2 - 6th Floor', 2),
+    new Property('Symphony Tower2 - 14th Floor', 2),
+    new Property('Olympic Heights', 2)
   ];
 
-  editTask(clickedTask) {
-    this.selectedTask = clickedTask;
+  editProperty(clickedProperty) {
+    this.selectedProperty = clickedProperty;
   }
 
   finishedEditing() {
-    this.selectedTask = null;
+    this.selectedProperty = null;
   }
-  addTask(newTask: Task) {
-    this.masterTaskList.push(newTask);
+  addProperty(newProperty: Property) {
+    this.masterPropertyList.push(newProperty);
   }
 }

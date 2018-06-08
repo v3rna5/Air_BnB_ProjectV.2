@@ -1,12 +1,12 @@
 // import { Component, OnInit } from '@angular/core';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Task } from '../models/task.model';
+import { Property } from '../models/property.model';
 
 
 @Component({
-  selector: 'app-edit-task',
-  templateUrl: './edit-task.component.html',
-  styleUrls: ['./edit-task.component.css']
+  selector: 'app-edit-property',
+  templateUrl: './edit-property.component.html',
+  styleUrls: ['./edit-property.component.css']
 })
 // export class EditTaskComponent implements OnInit {
 //
@@ -16,10 +16,10 @@ import { Task } from '../models/task.model';
 //   }
 //
 // }
-export class EditTaskComponent {
-  @Input() childSelectedTask: Task;
+export class EditPropertyComponent {
+  @Input() childSelectedProperty: Property;
   @Output() clickedDone = new EventEmitter();
-  
+
   finishedEditing() {
      this.clickedDone.emit();
    }

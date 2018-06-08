@@ -1,11 +1,11 @@
 // import { Component, OnInit } from '@angular/core';
 import { Component, Output, EventEmitter } from '@angular/core';
-import { Task } from '../models/task.model';
+import { Property } from '../models/property.model';
 
 @Component({
-  selector: 'app-new-task',
-  templateUrl: './new-task.component.html',
-  styleUrls: ['./new-task.component.css']
+  selector: 'app-new-property',
+  templateUrl: './new-property.component.html',
+  styleUrls: ['./new-property.component.css']
 })
 // export class NewTaskComponent implements OnInit {
 //
@@ -21,11 +21,11 @@ import { Task } from '../models/task.model';
 //   }
 // }
 
-export class NewTaskComponent {
-  @Output() sendTask = new EventEmitter();
+export class NewPropertyComponent {
+  @Output() sendProperty = new EventEmitter();
 
   submitForm(description: string, priority: string) {
-    let newTask: Task = new Task(description, parseInt(priority));
-    this.sendTask.emit(newTask);
+    let newProperty: Property = new Property(description, parseInt(priority));
+    this.sendProperty.emit(newProperty);
   }
 }
