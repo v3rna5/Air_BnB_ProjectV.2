@@ -12,7 +12,7 @@ This is my Angular JS Independent Project for Epicodus. It's a air b n b applica
 ## Setup/Installation Requirements
 
 To run app locally: In terminal, navigate to your desktop and execute:
-  * `$ git clone https://github.com/mrtsanchez/Github-User-Lookup`
+  * `$ git clone https://github.com/v3rna5/Airbnb_Project`
   * `$ npm install`
   * `$ bower install`
   * `$ gulp build`
