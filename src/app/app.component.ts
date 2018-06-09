@@ -15,7 +15,7 @@ export class AppComponent {
   selectedProperty = null;
 
   masterPropertyList: Property[] = [
-    new Property('Viceroy Property','address','amenities', 3),
+    new Property('Viceroy Property','135 Main St','Free Parking', 3),
     // new Property('Symphony Tower2 - 6th Floor', 2),
     // new Property('Symphony Tower2 - 14th Floor', 2),
     // new Property('Olympic Heights', 2)
