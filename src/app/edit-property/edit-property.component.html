@@ -1,19 +1,14 @@
 <div *ngIf="selectedProperty">
   <h3>{{selectedProperty.description}}</h3>
-  <h3>{{selectedProperty.address}}</h3>
-  <h3>{{selectedProperty.amenities}}</h3>
   <p>Property Complete? {{selectedProperty.done}}</p>
   <h3>Edit Property</h3>
   <label>Enter Property Description:</label>
   <input [(ngModel)]="selectedProperty.description">
-  <label>Enter Address:</label>
-    <input [(ngModel)]="selectedProperty.address">
-      <label>Enter Amenities:</label>
-      <input [(ngModel)]="selectedProperty.amenities">
-  <label>Enter Property Priority (1-3):</label>
   <br>
-  <input type="radio" [(ngModel)]="selectedProperty.priority" [value]="1">1 (Low Priority)<br>
-  <input type="radio" [(ngModel)]="selectedProperty.priority" [value]="2">2 (Medium Priority)<br>
-  <input type="radio" [(ngModel)]="selectedProperty.priority" [value]="3">3 (High Priority)
+  <label>Enter Property Price:</label>
+  <br>
+  <input type="radio" [(ngModel)]="selectedProperty.price" [value]="35">$35<br>
+  <input type="radio" [(ngModel)]="selectedProperty.price" [value]="45">$45<br>
+  <input type="radio" [(ngModel)]="selectedProperty.price" [value]="55"> $55<br>
   <button (click)="finishedEditing()">Done</button>
 </div>

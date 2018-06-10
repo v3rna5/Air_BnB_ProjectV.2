@@ -16,21 +16,20 @@ export class PropertyListComponent {
     this.clickSender.emit(propertyToEdit);
   }
   properties: Property[] = [
-    new Property('Finish weekend Angular homework for Epicodus course', 'address', 'amenties', 3),
-    // new Property('Begin brainstorming possible JavaScript group projects', 2),
-    // new Property('Add README file to last few Angular repos on GitHub', 2)
+    new Property('Viceory Tower 2', 35)
+
   ];
 
-  priorityColor(currentProperty){
-    if (currentProperty.priority === 3){
-      return "";
-    } else if (currentProperty.priority === 2) {
-      return  "";
-    } else {
-      return "";
+  priceColor(currentProperty){
+    // if (currentProperty.price === 35){
+    //   return "bg-danger";
+    // } else if (currentProperty.price === 45) {
+    //   return  "bg-warning";
+    // } else {
+      return "bg-info";
     }
-  }
-  filterByCompleteness: string = "incompleteProperties";
+  // }
+  filterByCompleteness: string = "inactiveProperties";
 
   onChange(optionFromMenu) {
   this.filterByCompleteness = optionFromMenu;

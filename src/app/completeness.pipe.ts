@@ -10,14 +10,14 @@ import {Property} from './models/property.model';
 export class CompletenessPipe implements PipeTransform {
   transform(input: Property[], desiredCompleteness) {
     var output: Property[] = [];
-    if(desiredCompleteness === "incompleteProperties") {
+    if(desiredCompleteness === "inactiveProperties") {
       for (var i = 0; i < input.length; i++) {
         if (input[i].done === false) {
           output.push(input[i]);
         }
       }
       return output;
-    } else if (desiredCompleteness === "completedProperties") {
+    } else if (desiredCompleteness === "activeProperties") {
       for (var i = 0; i < input.length; i++) {
         if (input[i].done === true) {
           output.push(input[i]);

@@ -10,8 +10,8 @@ import { Property } from '../models/property.model';
 export class NewPropertyComponent {
   @Output() sendProperty = new EventEmitter();
 
-  submitForm(description: string, address: string, amenities: string, priority: string) {
-    let newProperty: Property = new Property(description, address, amenities, parseInt(priority));
+  submitForm(description: string, price: string) {
+    let newProperty: Property = new Property(description, parseInt(price));
     this.sendProperty.emit(newProperty);
   }
 }

@@ -2,20 +2,16 @@
 <h5>Add New Property</h5>
 <div>
  <label>Enter New Property:</label>
- <input #newDescription>
-  <label>Enter Address:</label>
- <input #newAddress>
-  <label>Enter Amenities:</label>
- <input #newAmenities>
-</div>
+ <input #newDescription required>
+ <br>
 <div>
-  <label>Property Priority:</label>
-  <select #newPriority>
-    <option [value]="1"> Low Priority </option>
-    <option [value]="2"> Medium Priority </option>
-    <option [value]="3"> High Priority </option>
+  <label>Per night:</label>
+  <select #newPrice requred>
+    <option [value]= "35"> $35 </option>
+    <option [value]= "45"> $45</option>
+    <option [value]= "55" > $55 </option>
   </select>
-  <button (click)="submitForm(newDescription.value, newAddress.value, newAmenities.value, newPriority.value); newDescription.value=''; newAddress.value='';">Add</button>
+  <button (click)="submitForm(newDescription.value, newPrice.value); newDescription.value=''; newPrice.value='';">Add</button>
 </div>
 <br>
 <br>

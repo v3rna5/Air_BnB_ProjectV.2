@@ -2,15 +2,15 @@
 <br>
  <select (change)="onChange($event.target.value)">
   <option value="allProperties">All Properties</option>
-  <option value="completedProperties">Completed Properties</option>
-  <option value="incompleteProperties" selected="selected">Incomplete Properties</option>
+  <option value="activeProperties">Active Properties</option>
+  <option value="inactiveProperties" selected="selected">Inactive Properties</option>
 </select>
 <br>
 <br>
-<ul>
-  <li [class]="priorityColor(currentProperty)" *ngFor="let currentProperty of childPropertyList | completeness:filterByCompleteness">{{currentProperty.description}}{{currentProperty.address}}{{currentProperty.amenities}}  {{currentProperty.priority}}
+<ol>
+  <li [class]="priceColor(currentProperty)" *ngFor="let currentProperty of childPropertyList | completeness:filterByCompleteness">{{currentProperty.description}}{{currentProperty.address}}{{currentProperty.amenities}}  {{currentProperty.price}}
     <input *ngIf="currentProperty.done === true" type="checkbox" checked (click)="toggleDone(currentProperty, false)"/>
     <input *ngIf="currentProperty.done === false" type="checkbox" (click)="toggleDone(currentProperty, true)"/>
     <button (click)="editButtonClicked(currentProperty)">Edit!</button>
   </li>
-</ul>
+</ol>
