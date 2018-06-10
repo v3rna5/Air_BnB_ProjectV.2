@@ -10,10 +10,10 @@
     <p>
       Date: {{month}}/{{day}}/{{year}}
     </p>
-    <h3>Welcome, {{userName}}!</h3>
+    <!-- <h3>Welcome, {{userName}}!</h3>
     <form>
       <input [(ngModel)]="userName" type="text" name="user">
-    </form>
+    </form> -->
     <div style="text-align:left">
       <!-- <h3>{{currentProperty}}</h3> -->
       <div ng-app="myPropertyList" ng-cloak ng-controller="myCtrl" class="w3-card-2 w3-margin" style="max-width:400px;">
@@ -21,10 +21,8 @@
           <h5>Manage Properties</h5>
         </header>
         <app-property-list [childPropertyList]="masterPropertyList" (clickSender)="editProperty($event)"></app-property-list>
-
         <app-edit-property [childSelectedProperty]="selectedProperty" (clickedDone)="finishedEditing()"></app-edit-property>
         <app-new-property (sendProperty)="addProperty($event)"></app-new-property>
-
       </div>
     </div>
 
@@ -33,26 +31,26 @@
   <article>
     <div *ngIf="selectedProperty">
       <h3>Property: {{selectedProperty.description}}</h3>
-        <!-- <h3>Address: {{selectedProperty.address}}</h3>
-          <h3>Amenities: {{selectedProperty.amenities}}</h3> -->
+         <h3>Address: {{selectedProperty.address}}</h3>
+          <h3>Amenities: {{selectedProperty.amenities}}</h3>
             <h3>Per night: {{selectedProperty.price}}</h3>
       <!-- <h3>Edit Property</h3> -->
 
       <br>
         <label>Edit Property:</label>
       <input [(ngModel)]="selectedProperty.description">
-      <!-- <br>
+      <br>
       <label>Add Address:</label>
         <input [(ngModel)]="selectedProperty.address">
         <br>
         <label>Add Amenities</label>
           <input [(ngModel)]="selectedProperty.amenities">
-          <br> -->
+          <br>
       <label>Update Price:</label>
       <br>
-      <input type="radio" [(ngModel)]="selectedProperty.price" [value]="35"> $35 <br>
-      <input type="radio" [(ngModel)]="selectedProperty.price" [value]="45"> $45 <br>
-      <input type="radio" [(ngModel)]="selectedProperty.price" [value]="55"> $55 <br>
+      <input type="radio" [(ngModel)]="selectedProperty.price" [value]='35'> 35 <br>
+      <input type="radio" [(ngModel)]="selectedProperty.price" [value]='45'> 45 <br>
+      <input type="radio" [(ngModel)]="selectedProperty.price" [value]='55'> 55 <br>
       <br>
       <button class="btn btn-primary"(click)="finishedEditing()">Done</button>
     </div>

@@ -16,7 +16,7 @@ export class PropertyListComponent {
     this.clickSender.emit(propertyToEdit);
   }
   properties: Property[] = [
-    new Property('Viceory Tower 2', 35)
+    // new Property('Viceory Tower 2', '35')
 
   ];
 

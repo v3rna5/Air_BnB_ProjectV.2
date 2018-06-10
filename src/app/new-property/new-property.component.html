@@ -2,14 +2,14 @@
 <h5>Add New Property</h5>
 <div>
  <label>Enter New Property:</label>
- <input #newDescription required>
+ <input #newDescription>
  <br>
 <div>
   <label>Per night:</label>
-  <select #newPrice requred>
-    <option [value]= "35"> $35 </option>
-    <option [value]= "45"> $45</option>
-    <option [value]= "55" > $55 </option>
+  <select #newPrice>
+    <option [value]= '35'> 35 </option>
+    <option [value]= '45'> 45</option>
+    <option [value]= '55' > 55 </option>
   </select>
   <button (click)="submitForm(newDescription.value, newPrice.value); newDescription.value=''; newPrice.value='';">Add</button>
 </div>

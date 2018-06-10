@@ -5,10 +5,10 @@
   <label>Enter Property Description:</label>
   <input [(ngModel)]="selectedProperty.description">
   <br>
-  <label>Enter Property Price:</label>
+  <label>Enter Property Price: </label>
   <br>
-  <input type="radio" [(ngModel)]="selectedProperty.price" [value]="35">$35<br>
-  <input type="radio" [(ngModel)]="selectedProperty.price" [value]="45">$45<br>
-  <input type="radio" [(ngModel)]="selectedProperty.price" [value]="55"> $55<br>
+  <input type="radio" [(ngModel)]="selectedProperty.price" [value]="35">35<br>
+  <input type="radio" [(ngModel)]="selectedProperty.price" [value]="45">45<br>
+  <input type="radio" [(ngModel)]="selectedProperty.price" [value]="55">55<br>
   <button (click)="finishedEditing()">Done</button>
 </div>
