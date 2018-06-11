@@ -11,6 +11,6 @@
   <li [class]="priceColor(currentProperty)" *ngFor="let currentProperty of childPropertyList | completeness:filterByCompleteness">{{currentProperty.description}} {{currentProperty.price}}
     <input *ngIf="currentProperty.done === true" type="checkbox" checked (click)="toggleDone(currentProperty, false)"/>
     <input *ngIf="currentProperty.done === false" type="checkbox" (click)="toggleDone(currentProperty, true)"/>
-    <button (click)="editButtonClicked(currentProperty)">Edit!</button>
+    <button (click)="editButtonClicked(currentProperty)">Detail/Edit Info!</button>
   </li>
 </ol>

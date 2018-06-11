@@ -30,10 +30,10 @@
 
   <article>
     <div *ngIf="selectedProperty">
-      <h3>Property: {{selectedProperty.description}}</h3>
+      <!-- <h3>Property: {{selectedProperty.description}}</h3>
          <h3>Address: {{selectedProperty.address}}</h3>
           <h3>Amenities: {{selectedProperty.amenities}}</h3>
-            <h3>Per night: {{selectedProperty.price}}</h3>
+            <h3>Per night: {{selectedProperty.price}}</h3> -->
       <!-- <h3>Edit Property</h3> -->
 
       <br>
@@ -45,7 +45,7 @@
         <br>
         <label>Add Amenities</label>
           <input [(ngModel)]="selectedProperty.amenities">
-          <br>
+<br>
       <label>Update Price:</label>
       <br>
       <input type="radio" [(ngModel)]="selectedProperty.price" [value]='35'> 35 <br>
@@ -53,6 +53,12 @@
       <input type="radio" [(ngModel)]="selectedProperty.price" [value]='55'> 55 <br>
       <br>
       <button class="btn btn-primary"(click)="finishedEditing()">Done</button>
+      <h3>Property: {{selectedProperty.description}}</h3>
+         <h3>Address: {{selectedProperty.address}}</h3>
+          <h3>Amenities: {{selectedProperty.amenities}}</h3>
+            <h3>Per night: {{selectedProperty.price}}</h3>
+      <!-- <h3>Edit Property</h3> -->
+
     </div>
   </article>
   <footer>Copyright &copy; Verna Santos</footer>
