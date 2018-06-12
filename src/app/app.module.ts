@@ -9,6 +9,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { PropertyListComponent } from './property-list/property-list.component';
 import { EditPropertyComponent } from './edit-property/edit-property.component';
 import { NewPropertyComponent } from './new-property/new-property.component';
+import { AboutComponent } from './about/about.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { NewPropertyComponent } from './new-property/new-property.component';
     PropertyListComponent,
     EditPropertyComponent,
     NewPropertyComponent,
-    CompletenessPipe
+    CompletenessPipe,
+    AboutComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
