@@ -6,19 +6,35 @@ body{
   width: 100%;
   border: 1px solid silver;
 } */
-header, footer {
-  padding: 15px;
+header {
+  padding: 0px;
   color: white;
   background-color: #96ceb4;
   clear: left;
   text-align: center;
-
-
-
+height: 150px;
 }
+footer {
+  padding: 50px;
+  color: white;
+  background-color: #96ceb4;
+  clear: left;
+  text-align: center;
+height: 200px;
+ /* position: fixed; */
+}
+
 h6
 {
   text-align: center;
+  border: 1px solid lightgrey;
+ margin-top: 80px;
+ margin-bottom:150px;
+margin-right: 100px;
+margin-left: 80px;
+/* background-color: white; */
+
+
 }
 /* nav {
 
