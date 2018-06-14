@@ -1,4 +1,4 @@
-<div *ngIf="selectedProperty">
+<!-- <div *ngIf="selectedProperty">
   <h3>{{selectedProperty.description}}</h3>
   <p>Property Complete? {{selectedProperty.done}}</p>
   <h3>Edit Property</h3>
@@ -11,4 +11,18 @@
   <input type="radio" [(ngModel)]="selectedProperty.price" [value]="45">45<br>
   <input type="radio" [(ngModel)]="selectedProperty.price" [value]="55">55<br>
   <button (click)="finishedEditing()">Done</button>
-</div>
+</div> -->
+
+
+<h4>Edit Property</h4>
+<label>New Property Title:</label>
+<input [(ngModel)]="selectedProperty.title">
+<br>
+<label>New Property Address:</label>
+<input [(ngModel)]="selectedProperty.address">
+<br>
+<label>New Property Amenities:</label>
+<input [(ngModel)]="selectedProperty.amenities">
+<button (click)="beginUpdatingProperty(selectedProperty)">Update</button>
+<hr>
+<button (click)="beginDeletingProperty(selectedProperty)">Delete</button>

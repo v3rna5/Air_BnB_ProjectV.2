@@ -1,31 +1,31 @@
-<!-- <div class="panel panel-default">
+<div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Add New Album to Inventory</h3>
+    <h3 class="panel-title">Add New Property to Inventory</h3>
   </div>
   <div class="panel-body">
     <div>
       <div>
-        <label>Album Title:</label>
+        <label>Property Title:</label>
         <br>
         <input #newTitle>
       </div>
 
       <div>
-        <label>Album Artist:</label>
+        <label>Property Address:</label>
         <br>
-        <input #newArtist>
+        <input #newAddress>
       </div>
 
       <div>
-        <label>Album Description:</label>
+        <label>Property Amenities:</label>
         <br>
-        <textarea #newDescription></textarea>
+        <textarea #newAmenities></textarea>
       </div>
-      <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value); newTitle.value=''; newArtist.value=''; newDescription.value=''">Add</button>
+      <button (click)="submitForm(newTitle.value, newAddress.value, newAmenities.value); newTitle.value=''; newAddress.value=''; newAmenities.value=''">Add</button>
     </div>
   </div>
 </div>
 
 <div>
-  <app-marketplace></app-marketplace>
-</div>   -->
+  <app-property-list></app-property-list>
+</div>

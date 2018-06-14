@@ -1,4 +1,4 @@
-<br>
+<!-- <br>
 <br>
  <select (change)="onChange($event.target.value)">
   <option value="allProperties">All Properties</option>
@@ -13,4 +13,17 @@
     <input *ngIf="currentProperty.done === false" type="checkbox" (click)="toggleDone(currentProperty, true)"/>
     <button (click)="editButtonClicked(currentProperty)">Detail/Edit Info!</button>
   </li>
-</ol>
+</ol> -->
+
+<h2>Property</h2>
+
+<div *ngFor="let property of properties | async"  class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(property)"><em>{{property.title}}</em> by {{property.address}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{property.amenities}}
+      <hr>
+      <app-edit-property [selectedProperty]="property"></app-edit-property>
+    </div>
+  </div>
+</div>

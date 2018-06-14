@@ -1,4 +1,77 @@
 <html>
+<body>
+
+ <!-- <div class="container"> -->
+   <header>
+  <h1>{{title}}</h1>
+
+</header>
+<h6>
+  <router-outlet></router-outlet>
+        <!-- <router-outlet></router-outlet> -->
+</h6>
+<!-- Footer -->
+<footer class="page-footer font-small indigo mt-4">
+
+  <!-- Footer Links -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a routerLink="about">About</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a routerLink="property-list">Property List</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a routerLink="admin">Owner Access</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+
+      <!-- Grid column -->
+      <!-- <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">Contact</a>
+        </h6>
+      </div> -->
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+    <!-- <hr class="rgba-white-light" style="margin: 0 15%;">
+    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;"> -->
+
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href=""> Verna Santos</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+</body>
+</html>
+
+<!-- <html>
 <head>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
@@ -9,14 +82,14 @@
   <nav>
     <p>
       Date: {{month}}/{{day}}/{{year}}
-    </p>
+    </p> -->
     <!-- <h3>Welcome, {{userName}}!</h3>
     <form>
       <input [(ngModel)]="userName" type="text" name="user">
     </form> -->
-    <div style="text-align:left">
+    <!-- <div style="text-align:left"> -->
       <!-- <h3>{{currentProperty}}</h3> -->
-      <div ng-app="myPropertyList" ng-cloak ng-controller="myCtrl" class="w3-card-2 w3-margin" style="max-width:400px;">
+      <!-- <div ng-app="myPropertyList" ng-cloak ng-controller="myCtrl" class="w3-card-2 w3-margin" style="max-width:400px;">
         <header class="w3-container w3-light-grey w3-padding-16">
           <h5>Manage Properties</h5>
         </header>
@@ -24,19 +97,19 @@
         <app-edit-property [childSelectedProperty]="selectedProperty" (clickedDone)="finishedEditing()"></app-edit-property>
         <app-new-property (sendProperty)="addProperty($event)"></app-new-property>
       </div>
-    </div>
+    </div> -->
 
-  </nav>
+  <!-- </nav>
 
   <article>
-    <div *ngIf="selectedProperty">
+    <div *ngIf="selectedProperty"> -->
       <!-- <h3>Property: {{selectedProperty.description}}</h3>
          <h3>Address: {{selectedProperty.address}}</h3>
           <h3>Amenities: {{selectedProperty.amenities}}</h3>
             <h3>Per night: {{selectedProperty.price}}</h3> -->
       <!-- <h3>Edit Property</h3> -->
 
-      <br>
+      <!-- <br>
         <label>Edit Property:</label>
       <input [(ngModel)]="selectedProperty.description">
       <br>
@@ -56,12 +129,12 @@
       <h3>Property: {{selectedProperty.description}}</h3>
          <h3>Address: {{selectedProperty.address}}</h3>
           <h3>Amenities: {{selectedProperty.amenities}}</h3>
-            <h3>Per night: {{selectedProperty.price}}</h3>
+            <h3>Per night: {{selectedProperty.price}}</h3> -->
       <!-- <h3>Edit Property</h3> -->
 
-    </div>
+    <!-- </div>
   </article>
   <footer>Copyright &copy; Verna Santos</footer>
 
 </body>
-</html>
+</html> -->
