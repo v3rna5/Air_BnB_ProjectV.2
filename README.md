@@ -17,6 +17,8 @@ To run app locally: In terminal, navigate to your desktop and execute:
   * `$ bower install`
   * `$ gulp build`
   * `$ gulp serve`
+  * `ng serve`
+  * `Install Bootstrap`
 
 ## Known Bugs
 
@@ -37,9 +39,14 @@ HTML, Javascript, Angular JS, Typescript, CSS.
 
 | Behaviour  | Input | Output |
 | ------------- |:-------------:| -----|
+| User sees the home page.| User clicks Property List to view All Property Listing. | User sees Listing of Properties. |
+|User is on home page. | Clicks User Access | User is able to update: edit and delete property listing. |
 | The user should be able to add a property with name, price and details.     | Viceroy Condo, 135 Main St Manila Philippines, $35 a night | The app adds the property in the list. |
 | The user should be able to edit the name, price and details     | price: $35 >>> price update: $45 | update the value for price from 35 to 45. |
 | The user should be able to view only one property.    | select "view only Viceroy" | Display only Viceroy Property |
+
+### Deployment Link
+
 
 ### License
 
