@@ -19,25 +19,28 @@ header {
 footer {
   padding: 50px;
   color: white;
-  background-color: lightgrey;
+  background-color: white;
   clear: left;
   text-align: center;
-  height: 150px;
+  height: 100px;
   /* position: fixed; */
   color: grey;
 }
 
 h6
 {
+   opacity: .7;
   text-align: center;
-  border: 2px solid lightgrey;
+  /* border: 2px solid white; */
   margin-top: 80px;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
   margin-right: 100px;
   margin-left: 80px;
-  /* background-color: white; */
+  background-color: lightgrey;
   padding: 1em;
 }
+
+
 /* nav {
 
 max-width: 600px;
