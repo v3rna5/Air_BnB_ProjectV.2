@@ -1,36 +1,34 @@
 <html>
 <body>
-   <header>
-     <br>
-     <br>
-  <h1>{{title}}</h1>
-</header>
-<h6>
-  <router-outlet></router-outlet>
-</h6>
-
-<footer>
-  <br>
-     <div class="row text-center d-flex justify-content-center mb-3">
+  <header>
+    <br>
+    <br>
+    <h1>{{condo}}</h1>
+  </header>
+  <h6>
+    <router-outlet></router-outlet>
+  </h6>
+  <footer>
+    <div class="row text-center d-flex justify-content-center mb-3">
       <div class="col-md-3">
-        <h5 class="text-uppercase font-weight-bold">
+        <h5 class="font-weight-bold">
           <a routerLink="about">About</a>
         </h5>
       </div>
       <div class="col-md-3">
-        <h5 class="text-uppercase font-weight-bold">
+        <h5 class="font-weight-bold">
           <a routerLink="property-list">Property List</a>
         </h5>
       </div>
-     <div class="col-md-3">
-        <h5 class="text-uppercase font-weight-bold">
+      <div class="col-md-3">
+        <h5 class="font-weight-bold">
           <a routerLink="admin">Owner Access</a>
         </h5>
-       </div>
-  <!-- <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <a href=""> Verna Santos</a>
-  </div> -->
-   </div>
+      </div>
+      <!-- <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href=""> Verna Santos</a>
+    </div> -->
+  </div>
 </footer>
 </body>
 </html>

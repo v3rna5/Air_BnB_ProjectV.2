@@ -15,8 +15,8 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(title: string, address: string, amenities: string) {
-    var newProperty: Property = new Property(title, address, amenities);
+  submitForm(condo: string, address: string, amenities: string) {
+    var newProperty: Property = new Property(condo, address, amenities);
     this.propertyService.addProperty(newProperty);
   }
 

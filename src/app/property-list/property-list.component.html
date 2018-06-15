@@ -14,13 +14,15 @@
     <button (click)="editButtonClicked(currentProperty)">Detail/Edit Info!</button>
   </li>
 </ol> -->
-
+<br>
+<br>
 <h2>Property</h2>
 
 <div *ngFor="let property of properties | async"  class="panel panel-default">
   <div class="panel-body">
-    <h3 (click)="goToDetailPage(property)"><em>{{property.title}}</em> by {{property.address}}</h3>
+    <h3 (click)="goToDetailPage(property)"><em>{{property.condo}}</em> </h3>
     <div *ngIf="currentRoute === '/admin'">
+      {{property.address}} <br>
       {{property.amenities}}
       <hr>
       <app-edit-property [selectedProperty]="property"></app-edit-property>

@@ -1,13 +1,13 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Add New Property to Inventory</h3>
+    <h3 class="panel-condo">Add New Property to Inventory</h3>
   </div>
   <div class="panel-body">
     <div>
       <div>
-        <label>Property Title:</label>
+        <label>Property Condo:</label>
         <br>
-        <input #newTitle>
+        <input #newCondo>
       </div>
 
       <div>
@@ -21,7 +21,7 @@
         <br>
         <textarea #newAmenities></textarea>
       </div>
-      <button (click)="submitForm(newTitle.value, newAddress.value, newAmenities.value); newTitle.value=''; newAddress.value=''; newAmenities.value=''">Add</button>
+      <button (click)="submitForm(newCondo.value, newAddress.value, newAmenities.value); newCondo.value=''; newAddress.value=''; newAmenities.value=''">Add</button>
     </div>
   </div>
 </div>

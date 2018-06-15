@@ -25,7 +25,7 @@ export class PropertyService {
 
   updateProperty(localUpdatedProperty){
     var propertyEntryInFirebase = this.getPropertyById(localUpdatedProperty.$key);
-    propertyEntryInFirebase.update({title: localUpdatedProperty.title,
+    propertyEntryInFirebase.update({condo: localUpdatedProperty.condo,
       address: localUpdatedProperty.address,
       amenities: localUpdatedProperty.amenities});
     }
