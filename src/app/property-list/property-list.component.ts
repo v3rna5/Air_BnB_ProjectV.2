@@ -34,7 +34,7 @@ export class PropertyListComponent implements OnInit {
        clickedProperty.done = setCompleteness;
      }
 }
-}
+
 
 
 

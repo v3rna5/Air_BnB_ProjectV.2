@@ -1,5 +1,5 @@
 import {Pipe, PipeTransform} from '@angular/core';
-import {Property} from './models/property.model';
+import {Property} from './property.model';
 
 @Pipe({
   name: "completeness",

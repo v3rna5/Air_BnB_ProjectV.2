@@ -1,22 +1,11 @@
 
-
- <select (change)="onChange($event.target.value)">
+ <!-- <select (change)="onChange($event.target.value)">
   <option value="allProperties">All Properties</option>
   <option value="activeProperties">Active Properties</option>
   <option value="inactiveProperties" selected="selected">Inactive Properties</option>
-</select>
-
-<!-- <ol>
-  <li *ngFor="let property of properties | async | completeness:filterByCompleteness">{{currentProperty.condo}}
-    <input *ngIf="currentProperty.done === true" type="checkbox" checked (click)="toggleDone(currentProperty, false)"/>
-    <input *ngIf="currentProperty.done === false" type="checkbox" (click)="toggleDone(currentProperty, true)"/>
-
-  </li>
-</ol> -->
-
+</select> -->
 
 <h2>Property</h2>
-
 <div *ngFor="let property of properties | async"  class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(property)"><em>{{property.condo}}</em> </h3>

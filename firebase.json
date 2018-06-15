@@ -1,0 +1,9 @@
+{
+  "database": {
+    "rules": "databse.rules.json"
+  },
+  "hosting": {
+    "public": "dist"
+
+  }
+}

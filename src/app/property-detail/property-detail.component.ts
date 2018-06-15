@@ -5,9 +5,6 @@ import { Property } from '../property.model';
 import { PropertyService } from '../property.service';
 import { FirebaseObjectObservable } from 'angularfire2/database';
 
-
-
-
 @Component({
   selector: 'app-property-detail',
   templateUrl: './property-detail.component.html',

@@ -1,6 +1,6 @@
 
-import { Component, Input, Output, EventEmitter } from '@angular/core';
- //import { Component, Input, OnInit } from '@angular/core';
+// import { Component, Input, Output, EventEmitter } from '@angular/core';
+ import { Component, Input, OnInit } from '@angular/core';
  import { PropertyService } from '../property.service';
 
  @Component({
