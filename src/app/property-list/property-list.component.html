@@ -23,7 +23,8 @@
     <h3 (click)="goToDetailPage(property)"><em>{{property.condo}}</em> </h3>
     <div *ngIf="currentRoute === '/admin'">
       {{property.address}} <br>
-      {{property.amenities}}
+      {{property.amenities}} <br>
+      {{property.price}}
       <hr>
       <app-edit-property [selectedProperty]="property"></app-edit-property>
     </div>

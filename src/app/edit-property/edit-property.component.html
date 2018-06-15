@@ -23,6 +23,10 @@
 <br>
 <label>New Property Amenities:</label>
 <input [(ngModel)]="selectedProperty.amenities">
+<br>
+<label>New Property Price:</label>
+<input [(ngModel)]="selectedProperty.price">
+<br>
 <button (click)="beginUpdatingProperty(selectedProperty)">Update</button>
 <hr>
 <button (click)="beginDeletingProperty(selectedProperty)">Delete</button>

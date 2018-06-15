@@ -27,7 +27,8 @@ export class PropertyService {
     var propertyEntryInFirebase = this.getPropertyById(localUpdatedProperty.$key);
     propertyEntryInFirebase.update({condo: localUpdatedProperty.condo,
       address: localUpdatedProperty.address,
-      amenities: localUpdatedProperty.amenities});
+      amenities: localUpdatedProperty.amenities,
+      price: localUpdatedProperty.price});
     }
 
     deleteProperty(localPropertyToDelete){

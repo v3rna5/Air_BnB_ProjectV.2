@@ -20,8 +20,19 @@
         <label>Property Amenities:</label>
         <br>
         <textarea #newAmenities></textarea>
-      </div>
-      <button (click)="submitForm(newCondo.value, newAddress.value, newAmenities.value); newCondo.value=''; newAddress.value=''; newAmenities.value=''">Add</button>
+
+</div>
+
+<div>
+  <label>Property Price:</label>
+  <br>
+  <input #newPrice>
+</div>
+
+
+
+
+      <button (click)="submitForm(newCondo.value, newAddress.value, newAmenities.value, newPrice.value); newCondo.value=''; newAddress.value=''; newAmenities.value=''; newPrice.value=''">Add</button>
     </div>
   </div>
 </div>
