@@ -8,23 +8,23 @@ border: 1px solid silver;
 } */
 header {
   padding: 0px;
-  color: white;
+  color: grey;
   background-color: white;
   clear: left;
   text-align: center;
   height: 150px;
-  color: grey;
+
 }
 
 footer {
   padding: 50px;
-  color: white;
+  color: grey;
   background-color: white;
   clear: left;
   text-align: center;
   height: 100px;
   /* position: fixed; */
-  color: grey;
+
 }
 
 h6
@@ -33,7 +33,7 @@ h6
   text-align: center;
   /* border: 2px solid white; */
   margin-top: 80px;
-  margin-bottom: 200px;
+  margin-bottom: 230px;
   margin-right: 100px;
   margin-left: 80px;
   background-color: lightgrey;
