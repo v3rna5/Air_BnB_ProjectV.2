@@ -24,17 +24,8 @@ export class PropertyListComponent implements OnInit {
     this.router.navigate(['properties', clickedProperty.$key]);
 
   };
-
-  filterByCompleteness: string = "inactiveProperties";
-
-    onChange(optionFromMenu) {
-    this.filterByCompleteness = optionFromMenu;
-  }
-  toggleDone(clickedProperty: Property, setCompleteness: boolean) {
-       clickedProperty.done = setCompleteness;
-     }
+  
 }
-
 
 
 

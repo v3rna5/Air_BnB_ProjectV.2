@@ -13,7 +13,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditPropertyComponent } from './edit-property/edit-property.component';
- import { CompletenessPipe } from './completeness.pipe';
+ // import { CompletenessPipe } from './completeness.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +31,7 @@ export const firebaseConfig = {
     PropertyDetailComponent,
     AdminComponent,
     EditPropertyComponent,
-     CompletenessPipe
+     // CompletenessPipe
   ],
   imports: [
     BrowserModule,
