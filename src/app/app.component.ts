@@ -9,7 +9,15 @@ export class AppComponent {
   condo = 'vjs Airbnb';
 }
 
-
+// export class AppComponent {
+//   currentFocus: string = 'Angular Homework';
+//   currentTime = new Date();
+//   month: number = this.currentTime.getMonth() + 1;
+//   day: number = this.currentTime.getDate();
+//   year: number = this.currentTime.getFullYear();
+//   selectedTask = null;
+// }
+// }
 
 // import { Component } from '@angular/core';
 // import { Property } from './models/property.model';

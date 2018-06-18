@@ -7,13 +7,12 @@ width: 100%;
 border: 1px solid silver;
 } */
 header {
-  padding: 0px;
+   padding: 20px;
   color: grey;
   background-color: white;
   clear: left;
-  text-align: center;
-  height: 150px;
-
+  text-align: left;
+  height: 100px;
 }
 
 footer {
@@ -24,7 +23,6 @@ footer {
   text-align: center;
   height: 100px;
   /* position: fixed; */
-
 }
 
 h6
